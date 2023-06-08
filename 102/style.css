@@ -35,7 +35,7 @@ header {
 }
 
 .hero-header h1 {
-    font-size: 3rem;
+    font-size: 2em;
     color: black;
     font-weight: bold;
     text-align: center;
@@ -47,13 +47,15 @@ header {
 .hero-header p {
     margin: 10px;
     padding: 5px;
-        
+           
 }
 
 .hero-img {
     width: 50%;
     align-content: center;
     align-items: center;
+    margin:auto;
+    padding:auto;
     
 
 }
@@ -62,16 +64,35 @@ header {
     width: auto;
     height: auto;
     max-width: 100%;
-    
-    /* width: 50%;
-    float: right;
-    padding: 10px; */
-    
+        
 }
 
 .hero-h1-p {
-    width: 50%;
-    padding-top: 40px;
-    
+    width: auto;
+    padding: auto;
+    max-width:50%;
+
 }
 
+.content1 {
+    flex: display;
+    flex-direction: row;
+    
+
+}
+
+.section1, .section2, .section3 {
+    border: 1px solid #1D5C57;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.section1 {
+    float: left;
+}
+
+.section1 {
+    float: left;
+}
