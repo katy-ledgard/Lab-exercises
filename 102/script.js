@@ -14,7 +14,7 @@
 // }
 
 
-
+// const Welcome = alert("Welcome " + Name + "! I hope you enjoy my site!") 
 
 function yourName() {
     let user = prompt("What is your name?");
@@ -102,3 +102,26 @@ function preferredFood() {
 // typeBlue2()
 
 
+function timeOfDay() {
+    let time = prompt("What hour is it (0-23?)");
+    let location = prompt("Which country are you in?");
+    let message2 ="";
+
+    if (time <= 11 && location === "England") {
+        message2="Good Morning, England!"
+    }
+
+    else if (time <= 18 && location === "England") {
+        message2="Good Afternoon, England!";
+    }
+
+    else if (time <= 23 && location === "England") {
+        message2="Good night, England!";
+    }
+
+    else {
+        message2="hmmm, something went wrong..."
+    }
+
+    return document.write(message2);
+}
