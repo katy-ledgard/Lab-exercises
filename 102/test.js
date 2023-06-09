@@ -125,4 +125,3 @@ function timeOfDay() {
 
     return document.write(message2);
 }
-
