@@ -8,3 +8,4 @@ while (answer != "indigo") {
     alert("Congratulations, you guessed right!");
     }
 }
+

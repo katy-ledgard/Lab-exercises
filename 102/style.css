@@ -75,24 +75,59 @@ header {
 }
 
 .section-container {
-    flex: display;
-    flex-direction: row;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    flex-wrap: wrap;
     
-
 }
 
-.section1, .section2, .section3 {
+.section1 {
+    width: 330px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px -5px;
+    background-color: #538892;
     border: 1px solid #1D5C57;
-    display: flex;
     padding: 10px;
     margin: 10px;
-
+    border-radius: 15px;
+    
 }
 
-.section1 {
-    float: left;
+.section1:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 0px;
 }
 
-.section1 {
-    float: left;
+.image-container {
+    width: 90%;
+}
+
+.image-container img{
+    overflow: hidden;
+    height: 200px;
+    max-width: 300px;
+    margin-left: 0.25em;
+    border-radius: 15px;
+    
+}    
+
+
+.section-content{
+    margin:1rem;
+    margin-top:0.5rem;
+}
+
+.section-header{
+    margin-bottom:0.5rem;
+    text-align: center;
+}
+
+.section1 a {
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 5px;
 }
