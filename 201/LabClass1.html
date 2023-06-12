@@ -18,9 +18,9 @@
     <header></header>
     <main>
         <h1>Class 1 Lab</h1>
-        <p style="color: aquamarine; background-color: black;">Question 1</p>
-        <p style="color: yellow; background-color:blueviolet;">Question 3</p>
-        <p style="color:navy; background-color: lightcoral;">Question 4</p>
+        <p style="color: aquamarine; background-color: black;">What is your name?</p>
+        <p style="color: yellow; background-color:blueviolet;">Where are you from?</p>
+        <p style="color:navy; background-color: lightcoral;">What is your favourite animal?</p>
         <p style="color: orange; background-color: teal;">Question 5</p>
         
     </main>
@@ -28,8 +28,48 @@
     
     <script>
         let user;
+        let userLocation;
+        let myFavAnimal;
+        let userFavAnimal;
 
-        alert("Hello, my name is Katy! Welcome to my page!")
+        alert("Hello, my name is Katy. Welcome to my page!")
+
+        function userName() {
+            user = prompt("Let's get to know each other better! What is your name?");
+            alert("Hi " + user + ", it's great to have you on my site!");
+            console.log(user);
+        }
+
+        userName()
+
+        function findLocation() {
+            userLocation = prompt("So, " + user + ", where are you from?");
+            alert("You're from " + userLocation + "? That's lovely!");
+            console.log(userLocation);
+        }
+
+        findLocation()
+
+        function favAnimal() {
+            userFavAnimal = prompt(user + " from " + userLocation + ", what is your favourite animal?").toLowerCase();
+            console.log(userFavAnimal)
+
+            if (userFavAnimal === "dog") {
+                myFavAnimal = "cat"
+            } else if (userFavAnimal === "cat") {
+                myFavAnimal = "dog"
+            } else {
+                myFavAnimal = "penguin"
+            }
+
+            alert("Cute! " + userFavAnimal + " is a great choice! My favourite animal is a " + myFavAnimal + "!");
+        }
+
+        favAnimal()
+
+        
+
+
     </script>
 </body>
 </html>
