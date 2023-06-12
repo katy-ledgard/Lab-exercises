@@ -21,7 +21,7 @@
         <p style="color: aquamarine; background-color: black;">What is your name?</p>
         <p style="color: yellow; background-color:blueviolet;">Where are you from?</p>
         <p style="color:navy; background-color: lightcoral;">What is your favourite animal?</p>
-        <p style="color: orange; background-color: teal;">Question 5</p>
+        <p style="color: lightpink; background-color: teal;">Where is one place you have always dreamed of visiting?</p>
         
     </main>
     <footer></footer>
@@ -29,8 +29,10 @@
     <script>
         let user;
         let userLocation;
-        let myFavAnimal;
-        let userFavAnimal;
+        let myAnimal;
+        let userAnimal;
+        let myDestination;
+        let userDestination;
 
         alert("Hello, my name is Katy. Welcome to my page!")
 
@@ -51,23 +53,42 @@
         findLocation()
 
         function favAnimal() {
-            userFavAnimal = prompt(user + " from " + userLocation + ", what is your favourite animal?").toLowerCase();
-            console.log(userFavAnimal)
+            userAnimal = prompt(user + " from " + userLocation + ", what is your favourite animal?").toLowerCase();
+            console.log(userAnimal)
 
-            if (userFavAnimal === "dog") {
-                myFavAnimal = "cat"
-            } else if (userFavAnimal === "cat") {
-                myFavAnimal = "dog"
+            if (userAnimal === "dog") {
+                myAnimal = "cat"
+            } else if (userAnimal === "cat") {
+                myAnimal = "dog"
             } else {
-                myFavAnimal = "penguin"
+                myAnimal = "penguin"
             }
 
-            alert("Cute! " + userFavAnimal + " is a great choice! My favourite animal is a " + myFavAnimal + "!");
+            alert("Cute! " + userAnimal + " is a great choice! My favourite animal is a " + myAnimal + "!");
         }
 
         favAnimal()
 
-        
+        function dreamDestination() {
+            userDestination = prompt("Hi, " + user + " from " + userLocation + " whose favourite animal is a " + userAnimal + ". Tell me, where is one place you have always dreamed of visiting?").toLowerCase();
+            console.log(userDestination)
+
+            if (userDestination === "iceland") {
+                myDestination = "I think I want to go somewhere sunny!"
+            } else if (userDestination === "thailand") {
+                myDestination = "I think I'd prefer somewhere I won't get sunburnt!"
+            } else {
+                myDestination = "I would love to go to South Korea!"
+            }
+
+            alert("You would like to visit " + userDestination + "? That's cool! " + myDestination);
+        }
+
+        dreamDestination()
+
+        alert("Thanks for answering my questions, " + user + " from " + userLocation + ". Your favourite animal is a " + userAnimal + " and you want to visit " + userDestination + " - I feel like I know you already!");
+
+
 
 
     </script>
